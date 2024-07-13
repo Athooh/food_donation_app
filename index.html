@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation and Distribution Web App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#donate">Donate Food</a></li>
+                <li><a href="#request">Request Food</a></li>
+                <li><a href="#donations">Donations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome to the Food Donation and Distribution Web App</h1>
+        <p>Connecting food donors with those in need.</p>
+        <button onclick="showSection('register')">Get Started</button>
+    </section>
+    <section id="register" class="hidden">
+        <h2>Register</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <label for="userType">I am a:</label>
+            <select id="userType" name="userType">
+                <option value="donor">Donor</option>
+                <option value="recipient">Recipient</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    <section id="donate" class="hidden">
+        <h2>Donate Food</h2>
+        <form>
+            <label for="foodType">Food Type:</label>
+            <input type="text" id="foodType" name="foodType">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity">
+            <label for="expiryDate">Expiration Date:</label>
+            <input type="date" id="expiryDate" name="expiryDate">
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image">
+            <button type="submit">Donate</button>
+        </form>
+    </section>
+    <section id="request" class="hidden">
+        <h2>Request Food</h2>
+        <form>
+            <label for="requestedFood">Food Type:</label>
+            <input type="text" id="requestedFood" name="requestedFood">
+            <label for="urgency">Urgency Level:</label>
+            <select id="urgency" name="urgency">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button type="submit">Request</button>
+        </form>
+    </section>
+
+    <section id="donations" class="hidden">
+        <h2>Donations</h2>
+        <p>Are you sure you want to logout?</p>
+        <button >Logout</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Food Donation App. All rights reserved.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
