@@ -127,10 +127,11 @@ h1, h2 {
 
 .box {
      width: 500px;
-     border: 1px solid grey;
+     /* border: 1px solid grey; */
      padding: 30px;
      border-radius: 4px;
      margin-bottom: 60px;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .box img {
@@ -140,8 +141,14 @@ h1, h2 {
 
 .box h3 {
     font-size: 18px;
-    width: 300px;
+    width: 250px;
     text-align: center;
+    margin: auto;
+}
+
+.box p {
+    text-align: center;
+    width: 400px;
     margin: auto;
 }
 
