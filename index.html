@@ -8,10 +8,13 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo">
+        <div class="logo">
+            <a href="index.html">Jamii Plate</a>
+        </div>
+        
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <!-- <li><a href="index.html">Home</a></li> -->
                 <li><a href="#donate">Donate Food</a></li>
                 <li><a href="#request">Request Food</a></li>
                 <li><a href="#donations">Donations</a></li>
@@ -19,9 +22,37 @@
         </nav>
     </header>
     <section id="home">
-        <h1>Welcome to the Food Donation and Distribution Web App</h1>
+        <h1>Welcome to Jamii Plate.</h1>
+        <h2>Food Donation and Distribution Platform</h2>
         <p>Connecting food donors with those in need.</p>
         <button onclick="showSection('register')">Get Started</button>
+    </section>
+    <section id="causes">
+        <div class="objectives">
+            <h4>Why Jamii Plate?</h4>
+        <h2>We aim to provide food to those in need.</h2>
+        <p>By donating surplus food, you directly support families and individuals in your community.</p>
+        </div>
+        <div class="objective-boxes">
+            <div class="box">
+                <h3>Reduce Waste</h3>
+                <p>Help us minimize food waste and make a positive impact on the environment.</p>
+                <img src="./images/donation image.webp" alt="">
+                <button>DONATE NOW</button>
+            </div>
+            <div class="box">
+                <h3>Distribute</h3>
+                <p>Our volunteers ensure safe and timely delivery to those who need it.</p>
+                <img src="./images/CommunityDrive.jpg" alt="">
+                <button>DONATE NOW</button>
+            </div>
+            <div class="box">
+                <h3>Easy & Convenient</h3>
+                <p>Help us minimize food waste and make a positive impact on the environment.</p>
+                <img src="./images/Screenshot_20240713-121913~2.png" alt="">
+                <button>DONATE NOW</button>
+            </div>
+        </div>
     </section>
     <section id="register" class="hidden">
         <h2>Register</h2>
@@ -75,7 +106,7 @@
         <button >Logout</button>
     </section>
     <footer>
-        <p>&copy; 2024 Food Donation App. All rights reserved.</p>
+        <p>&copy; 2024 Jamii Plate. All rights reserved.</p>
     </footer>
     <script src="js/scripts.js"></script>
 </body>

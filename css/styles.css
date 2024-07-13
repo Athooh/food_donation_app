@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,10 +8,28 @@ body {
 }
 
 header {
-    background: #35424a;
+    background: #28C77B;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 40px;
+}
+
+.logo {
+    
+    font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 35px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
 }
 
 header img {
@@ -24,12 +44,17 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 10px;
+    font-size: 18px;
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #80ed99;
 }
 
 section {
@@ -44,9 +69,91 @@ section {
 }
 
 h1, h2 {
-    color: #35424a;
+    color: #fff;
 }
 
+#home {
+    background-image: url('../images/protest.webp');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#home h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+#home h2 {
+    font-size: 2em;
+}
+
+#home p {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+#home button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #35424a;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home button:hover {
+    background-color: #ddd;
+}
+
+.objectives {
+    text-align: center;
+    margin-block: 30px;
+}
+
+.objectives h2 {
+    color: #35424a;
+    
+}
+
+.objective-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+     width: 500px;
+     border: 1px solid grey;
+     padding: 30px;
+     border-radius: 4px;
+     margin-bottom: 60px;
+}
+
+.box img {
+    width: 500px;
+    height: 350px;
+}
+
+.box h3 {
+    font-size: 18px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+button {
+    padding: 18px 35px;
+    margin-block: 20px;
+    background-color: #28C77B;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -64,7 +171,7 @@ form input, form select, form button {
 footer {
     text-align: center;
     padding: 10px;
-    background: #35424a;
+    background: #1A202C;
     color: #ffffff;
     position: fixed;
     bottom: 0;
